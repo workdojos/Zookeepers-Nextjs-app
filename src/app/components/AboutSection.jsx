@@ -37,7 +37,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>San Diego Zoo Global</li>
         <li>Wildlife Conservation Society (WCS)</li>
-        <li>Smithsonian's National Zoo</li>
+        <li>Smithsonian`s National Zoo</li>
         <li>Australia Zoo</li>
         <li>Chester Zoo</li>
         <li>Cincinnati Zoo & Botanical Garden</li>
