@@ -46,14 +46,14 @@ const HeroSection = () => {
               href="https://meet.admins.live/join?room=Kevin+Bacon&name=Guest"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Call me
+              Join
             </Link>
             <Link
-              href="mailto:jay@admins.live"
+              href="mailto:support@workmates.live"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                E-mail me
+                E-mail Us
               </span>
             </Link>
           </div>
