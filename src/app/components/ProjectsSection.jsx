@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://www.aza.org/",
-    previewUrl: "/images/projects/1.jpg",
+    previewUrl: "https://portfolio.admins.live/images/projects/1.jpg",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const projectsData = [
     id: 6,
     title: "FedEx:  Largest Digital Transformation to Date",
     description: "6. Zoo and Aquarium Association (ZAA) - ZAA offers educational programs, workshops, and networking events for zookeepers interested in learning about different species and advancing their career in the industry.",
-    image: "/images/projects/6.jpg,
+    image: "https://portfolio.admins.live/images/projects/6.jpg,
     tag: ["All", "Agile"],
     gitUrl: "https://www.zooaquarium.org.au/",
     previewUrl: "https://portfolio.admins.live/images/projects/6.png",
