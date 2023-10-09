@@ -1,10 +1,40 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => { 
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    }
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+      const options = {
+        method: 'Post',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body:JSONdata,
+     }
+      
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true);
+
+      }
+  }  
   return (
     <section
       id="contact"
@@ -28,7 +58,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -37,6 +67,7 @@ const EmailSection = () => {
               Your email
             </label>
             <input
+              name="email"
               type="email"
               id="email"
               required
@@ -52,6 +83,7 @@ const EmailSection = () => {
               Subject
             </label>
             <input
+              name="subject"
               type="text"
               id="subject"
               required
@@ -79,6 +111,13 @@ const EmailSection = () => {
           >
             Send Message
           </button>
+          {
+            emailSubmitted && (
+              <p className="text-green-500 text-sm mt-2">
+                E-mail sent successfully!
+              </p>
+            )
+          }
         </form>
       </div>
     </section>
