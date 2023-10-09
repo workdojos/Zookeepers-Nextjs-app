@@ -8,11 +8,11 @@ import MenuOverlay from "./MenuOverlay";
 const navLinks = [
   {
     title: "About",
-    path: "http://portfolio.admins.live/#about",
+    path: "http://zookeepers.workmates.live/#about",
   },
   {
     title: "Features",
-    path: "http://portfolio.admins.live/#features",
+    path: "http://zookeepers.workmates.live/#features",
   },
   {
     title: "Pricing",
@@ -20,7 +20,7 @@ const navLinks = [
   },
   {
     title: "Contact",
-    path: "http://portfolio.admins.live/#contact",
+    path: "http://zookeepers.workmates.live/#contact",
   },
 ];
 

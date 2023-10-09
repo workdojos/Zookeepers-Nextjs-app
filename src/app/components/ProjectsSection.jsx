@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "AZA",
     description: "1. Association of Zoos and Aquariums (AZA) - The official website of AZA provides a wide range of resources, including training programs, publications, and job listings, to help aspiring zookeepers improve their skills and stay updated with industry trends.",
     image: "/images/projects/1.jpg",
     tag: ["All", "Web"],
@@ -16,16 +16,16 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Virtual Tour Website",
+    title: "IMATA",
     description: "2. International Marine Animal Trainers Association (IMATA) - IMATA offers resources specifically for those interested in animal training. Their website provides access to publications, training techniques, and networking opportunities.",
     image: "/images/projects/2.jpg",
-    tag: ["All", "Web", "Travel", "Wordpress"],
+    tag: ["All", "Web"],
     gitUrl: "https://www.imata.org/",
     previewUrl: "https://portfolio.admins.live/images/projects/2.png",
   },
   {
     id: 3,
-    title: "Open-source Dashboards",
+    title: "AAZK",
     description: "3. American Association of Zoo Keepers (AAZK) - AAZK offers professional development opportunities, including conferences, workshops, and certifications, to help zookeepers enhance their skills in various areas, such as animal behavior and husbandry.",
     image: "/images/projects/3.jpg",
     tag: ["All", "Web"],
@@ -34,28 +34,28 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Workmates.Live Hiring Hives",
+    title: "WCS",
     description: "4. Wildlife Conservation Society (WCS) - The WCS website provides valuable information on wildlife management and conservation. Additionally, they offer training courses and job opportunities for those interested in working in this field.",
     image: "/images/projects/4.jpg",
-    tag: ["All", "Web", "Wordpress"],
+    tag: ["All", "Web"],
     gitUrl: "https://www.wcs.org/",
     previewUrl: "https://portfolio.admins.live/images/projects/4.png",
   },
   {
     id: 5,
-    title: "Microsoft:  Hardware-as-a-Service",
+    title: "ZooBiology",
     description: "5. ZooBiology - This online resource features numerous articles, webinars, and forums focused on various aspects of zookeeping, including animal nutrition, veterinary medicine, and environmental enrichment.",
     image: "images/projects/5.jpg",
-    tag: ["All", "Retail", "SaaS", "HaaS"],
+    tag: ["All", "Web"],
     gitUrl: "https://onlinelibrary.wiley.com/journal/10982361",
     previewUrl: "https://portfolio.admins.live/images/projects/5.png",
   },
   {
     id: 6,
-    title: "FedEx:  Largest Digital Transformation to Date",
+    title: "ZAA",
     description: "6. Zoo and Aquarium Association (ZAA) - ZAA offers educational programs, workshops, and networking events for zookeepers interested in learning about different species and advancing their career in the industry.",
     image: "/images/projects/6.jpg",
-    tag: ["All", "Agile"],
+    tag: ["All"],
     gitUrl: "https://www.zooaquarium.org.au/",
     previewUrl: "https://portfolio.admins.live/images/projects/6.png",
   },
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Resources
       </h2>
-      <div className="text-white flex flex-flow justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-flow justify-center items-center gap-2 pb-8">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -95,36 +95,10 @@ const ProjectsSection = () => {
           name="Web"
           isSelected={tag === "Web"}
         />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="HaaS"
-          isSelected={tag === "HaaS"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="SaaS"
-          isSelected={tag === "SaaS"}
-        />
+
 
       </div>
-      <div className="text-white flex flex-flow justify-center items-center gap-2 pb-16">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Retail"
-          isSelected={tag === "Retail"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Wordpress"
-          isSelected={tag === "Wordpress"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Travel"
-          isSelected={tag === "Travel"}
-        />
-
-      </div>    
+  
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
