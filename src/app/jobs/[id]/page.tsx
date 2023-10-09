@@ -1,4 +1,4 @@
-import getJobs, {getJob} from "./services";
+import getJobs, {getJob} from "./services"; 
 
 export async function generateStaticParams() {
   const jobs = await getJobs();
