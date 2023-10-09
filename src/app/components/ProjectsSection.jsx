@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Virtual Tour Website",
-    description: "2. International Marine Animal Trainers' Association (IMATA) - IMATA offers resources specifically for those interested in animal training. Their website provides access to publications, training techniques, and networking opportunities.",
+    description: "2. International Marine Animal Trainers Association (IMATA) - IMATA offers resources specifically for those interested in animal training. Their website provides access to publications, training techniques, and networking opportunities.",
     image: "/images/projects/2.jpg",
     tag: ["All", "Web", "Travel", "Wordpress"],
     gitUrl: "https://www.imata.org/",
