@@ -17,21 +17,21 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m Jay{" "}
+              Zookeeper&apos;s Hive{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Digital Marketer",
+                "Scrape Jobs",
                 1000,
-                "Project Manager",
+                "Auto-Apply",
                 1000,
-                "SysAdmin",
+                "Build",
                 1000,
-                "UI/UX Designer",
+                "Collaborate",
                 1000,
-                "Entrepreneur",
                 1000,
+                "Automate with AI",
               ]}
               wrapper="span"
               speed={50}
@@ -39,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I&apos;m a big idea guy with self-taught tech chops.
+            Land a job, build things with others, host your own hive.
           </p>
           <div>
             <Link
@@ -66,7 +66,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/me-token.png"
+              src="/images/zookeepersT.png"
               alt="hero image of me backpacking in Patagonia"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={500}
