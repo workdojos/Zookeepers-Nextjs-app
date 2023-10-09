@@ -1,5 +1,5 @@
 import Airtable, { FieldSet, Records } from 'airtable';
-import { JobData } from './types';
+import { JobData } from './components/types';
 
 const base = new Airtable({apiKey: process.env.AIRTABLE_PAT}).base('appFHwLhgqPvMbxCr');
 let jobs: null | Records<FieldSet> = null;
