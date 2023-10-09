@@ -42,7 +42,7 @@ const TAB_DATA = [
         <li>Chester Zoo</li>
         <li>Cincinnati Zoo & Botanical Garden</li>
         <li>Singapore Zoo</li>
-        <li>Disney's Animal Kingdom</li>
+        <li>Disney`s Animal Kingdom</li>
         <li>Henry Doorly Zoo</li>
         <li>Oregon Zoo</li>
       </ul>
@@ -87,7 +87,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About the Hive</h2>
           <p className="text-base lg:text-lg">
-            Join the world's first self-hosted hiring hive built for zookeepers.  Scrape jobs discretely, auto-apply to select companies every month, collaborate with others to build things with open-source technology.
+            Join the world`s first self-hosted hiring hive built for zookeepers.  Scrape jobs discretely, auto-apply to select companies every month, collaborate with others to build things with open-source technology.
           <br></br>
           <br></br>
           </p>
