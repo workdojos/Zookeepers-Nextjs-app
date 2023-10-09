@@ -11,8 +11,12 @@ const navLinks = [
     path: "http://portfolio.admins.live/#about",
   },
   {
-    title: "Projects",
-    path: "http://portfolio.admins.live/#projects",
+    title: "Features",
+    path: "http://portfolio.admins.live/#features",
+  },
+  {
+    title: "Pricing",
+    path: "https://blog.workdojos.com/#/portal/signup",
   },
   {
     title: "Contact",
@@ -30,7 +34,7 @@ const Navbar = () => {
           href={"https://portfolio.admins.live"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          Portfolio
+          Hive
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

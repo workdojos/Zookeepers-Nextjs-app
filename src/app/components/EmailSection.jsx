@@ -22,7 +22,7 @@ const EmailSection = () => {
           try my best to get back to you within a day!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://www.linkedin.com/in/dojos">
+          <Link href="/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>

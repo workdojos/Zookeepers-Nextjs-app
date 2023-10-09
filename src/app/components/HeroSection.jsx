@@ -31,7 +31,7 @@ const HeroSection = () => {
                 "Collaborate",
                 1000,
                 1000,
-                "Automate with AI",
+                "Automate",
               ]}
               wrapper="span"
               speed={50}
