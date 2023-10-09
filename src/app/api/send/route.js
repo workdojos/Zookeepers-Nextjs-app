@@ -1,24 +1,25 @@
-// import { EmailTemplate } from '../../../components/EmailTemplate';
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { WaitlistEmail } from '../../../transactional/emails/waitlist';
+import { resend } from '../../lib/resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const send = async (req: NextApiRequest, res: NextApiResponse) => {
+  const { method } = req;
 
-export async function POST() {
-  try {
-    const data = await resend.emails.send({
-      from: "admin@workmates.live",
-      to: ["admin@workmates.live"],
-      subject: "Thanks!",
-      react: (
-        <>
-          <p>Got it!  Reply to this e-mail if you have any questions.  Thanks!</p>
-        </>
-      ),
-    });
+  switch (method) {
+    case 'GET': {
+      const data = await resend.emails.send({
+        from: 'Admin <admins@workmates.live>',
+        to: ['admins@workmates.live'],
+        subject: 'Thanks!',
+        react: WaitlistEmail({ name: 'Bu' }),
+      });
 
-    return NextResponse.json(data);
-  } catch (error) {
-    return NextResponse.json({ error });
+      return res.status(200).send({ data: data.id });
+    }
+    default:
+      res.setHeader('Allow', ['POST']);
+      res.status(405).end(`Method ${method} Not Allowed`);
   }
-}
+};
+
+export default send;
