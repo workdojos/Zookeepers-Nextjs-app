@@ -25,7 +25,6 @@ const EmailSection = () => {
       // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
-      },"use client";
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
