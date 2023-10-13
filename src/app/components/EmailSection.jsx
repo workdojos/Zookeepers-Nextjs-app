@@ -50,7 +50,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          We&apos;re always hear to answer your questions about everything open-source!
+          We&apos;re always here to answer your questions about everything open-source!
           You&apos;ll hear back from us in a day or less.  Thanks for visiting!
         </p>
         <div className="socials flex flex-row gap-2">
