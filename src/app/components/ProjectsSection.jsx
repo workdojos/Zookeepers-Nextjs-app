@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://www.aza.org/",
-    previewUrl: "https://portfolio.admins.live/images/projects/1.jpg",
+    previewUrl: "/",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projectsData = [
     image: "/images/projects/2.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://www.imata.org/",
-    previewUrl: "https://portfolio.admins.live/images/projects/2.png",
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/projects/3.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://aazk.org/",
-    previewUrl: "https://portfolio.admins.live/images/projects/3.png",
+    previewUrl: "/",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const projectsData = [
     image: "/images/projects/4.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://www.wcs.org/",
-    previewUrl: "https://portfolio.admins.live/images/projects/4.png",
+    previewUrl: "/",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const projectsData = [
     image: "images/projects/5.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://onlinelibrary.wiley.com/journal/10982361",
-    previewUrl: "https://portfolio.admins.live/images/projects/5.png",
+    previewUrl: "/",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const projectsData = [
     image: "/images/projects/6.jpg",
     tag: ["All"],
     gitUrl: "https://www.zooaquarium.org.au/",
-    previewUrl: "https://portfolio.admins.live/images/projects/6.png",
+    previewUrl: "/",
   },
 ];
 
