@@ -8,19 +8,19 @@ import MenuOverlay from "./MenuOverlay";
 const navLinks = [
   {
     title: "About",
-    path: "#about",
+    path: "https://zookeepers.workmates.live/#about",
   },
   {
     title: "Resources",
-    path: "#resources",
+    path: "https://zookeepers.workmates.live/#resources",
   },
   {
     title: "Pricing",
-    path: "#/portal/signup",
+    path: "https://blog.workdojos.com/#/portal/signup",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "https://zookeepers.workmates.live/#contact",
   },
 ];
 
