@@ -9,21 +9,7 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Animal handling</li>
-        <li>Veterinary medicine</li>
-        <li>Wildlife management</li>
-        <li>Animal nutrition</li>
-        <li>Biology</li>
-        <li>Animal behavior</li>
-        <li>Animal husbandry</li>
-        <li>Health monitoring</li>
-        <li>Conservation</li>
-        <li>Zoo maintenance</li>
-        <li>Animal training</li>
-        <li>First Aid</li>
-        <li>Environmental enrichment</li>
-        <li>Research techniques</li>
-        <li>Record-keeping</li>
+        <li>Break</li>
       </ul>
     ),
   
